@@ -99,9 +99,9 @@ Currently seeking **AI/ML Engineer** or **Data Engineer** roles where I can ship
 
 ## Projects
 
-<details>
-<summary><b>VocalLytics — Voice-to-SQL Analytics Platform</b> &nbsp;<code>Claude · Whisper · PostgreSQL · Plotly</code></summary>
-<br>
+### VocalLytics — Voice-to-SQL Analytics Platform
+`Claude · Whisper · PostgreSQL · Plotly`
+
 
 Voice-to-SQL BI copilot processing Instacart-scale data (~3.4M orders, **30M+ line items**). Converts natural-language voice queries into guarded SQL and interactive charts.
 
@@ -112,11 +112,10 @@ Voice-to-SQL BI copilot processing Instacart-scale data (~3.4M orders, **30M+ li
 | Security | Dynamic SQL allowlists · guarded query generation |
 | Quality | NL-to-SQL eval suite · **29 passing tests** |
 
-</details>
 
-<details>
-<summary><b>FinSight-AI — Multi-Agent Stock Analysis Platform</b> &nbsp;<code>FastAPI · FinBERT · ChromaDB · asyncio</code></summary>
-<br>
+### FinSight-AI — Multi-Agent Stock Analysis Platform
+`FastAPI · FinBERT · ChromaDB · asyncio`
+
 
 4-agent financial research system (fundamental · technical · sentiment · risk) with async orchestration across US, NSE, and BSE markets.
 
@@ -128,11 +127,10 @@ Voice-to-SQL BI copilot processing Instacart-scale data (~3.4M orders, **30M+ li
 | RAG | ChromaDB + all-MiniLM-L6-v2 · FinBERT live news sentiment |
 | Optimization | Markowitz max-Sharpe + equal-weight portfolio backtesting |
 
-</details>
 
-<details>
-<summary><b>TensorRT Inference Optimization Engine</b> &nbsp;<code>TensorRT 11 · CUDA 12.4 · PyTorch · ONNX</code></summary>
-<br>
+### TensorRT Inference Optimization Engine
+`TensorRT 11 · CUDA 12.4 · PyTorch · ONNX`
+
 
 Compiled ResNet-50 to FP16 TensorRT 11 on CUDA 12.4 with zero accuracy loss.
 
@@ -142,31 +140,28 @@ Compiled ResNet-50 to FP16 TensorRT 11 on CUDA 12.4 with zero accuracy loss.
 | P99 Latency | 21.4 ms | **4.9 ms** | **4.3×** |
 | Accuracy (10K CIFAR-10) | 95.02% | 95.03% | ✅ Zero loss |
 
-</details>
 
-<details>
-<summary><b>Distributed CDC Pipeline — Exactly-Once Delivery</b> &nbsp;<code>Debezium · Kafka · PyFlink · Iceberg</code></summary>
-<br>
+### Distributed CDC Pipeline — Exactly-Once Delivery
+`Debezium · Kafka · PyFlink · Iceberg`
+
 
 `PostgreSQL WAL → Debezium → Kafka → PyFlink → Apache Iceberg`
 
 Production-grade CDC pipeline sustaining **50,000 writes/min** with mathematically proven exactly-once delivery via Flink checkpoint barriers, two-phase Iceberg atomic commits, and `(entity_id, LSN, operation_type)` idempotency keys. Chaos-tested: survives TaskManager kills and network partitions — zero data loss validated by DuckDB post-recovery assertions.
 
-</details>
 
-<details>
-<summary><b>Tiered Data Lakehouse Compaction Engine</b> &nbsp;<code>Kafka · Spark Streaming · Delta Lake</code></summary>
-<br>
+### Tiered Data Lakehouse Compaction Engine
+`Kafka · Spark Streaming · Delta Lake`
+
 
 `Kafka → Spark Structured Streaming → Delta Lake`
 
 Python compaction daemon reducing per-partition file count by **95%** (87 → 4 files) in 14.5 seconds. Delta ACID `replaceWhere` + MVCC snapshot isolation for zero reader downtime. Backed by 77 pytest tests and DuckDB before/after benchmarks.
 
-</details>
 
-<details>
-<summary><b>RAG Evaluation Platform with CI/CD Quality Gates</b> &nbsp;<code>ChromaDB · BM25 · OpenAI · Anthropic · Ollama</code></summary>
-<br>
+### RAG Evaluation Platform with CI/CD Quality Gates
+`ChromaDB · BM25 · OpenAI · Anthropic · Ollama`
+
 
 End-to-end RAG eval platform — 3 retrievers, 3 LLM providers, 7 automated metrics over an 8-case golden QA suite.
 
@@ -176,11 +171,10 @@ End-to-end RAG eval platform — 3 retrievers, 3 LLM providers, 7 automated metr
 | Retrieval hit rate | **100%** |
 | Merge protection | GitHub Actions blocks regressions |
 
-</details>
 
-<details>
-<summary><b>Telco Churn Prediction — MLOps Pipeline</b> &nbsp;<code>XGBoost · MLflow · Evidently · GitHub Actions</code></summary>
-<br>
+### Telco Churn Prediction — MLOps Pipeline
+`XGBoost · MLflow · Evidently · GitHub Actions`
+
 
 XGBoost churn classifier on 7,043 records / 21 features with full automated MLOps lifecycle.
 
@@ -191,19 +185,17 @@ XGBoost churn classifier on 7,043 records / 21 features with full automated MLOp
 | Quality gate | ≤ 0.01 PR-AUC regression gates Champion promotion in MLflow Registry |
 | Automation | Weekly batch scoring + manual retraining via GitHub Actions · Evidently drift monitor |
 
-</details>
 
-<details>
-<summary><b>ML Feature Store & Train-Serve Skew Detection</b> &nbsp;<code>PySpark · Feast · Redis · FastAPI</code></summary>
-<br>
+### ML Feature Store & Train-Serve Skew Detection
+`PySpark · Feast · Redis · FastAPI`
+
 
 End-to-end ML feature pipeline on NYC Taxi data enforcing strict train-serve parity. Features computed once in PySpark → Feast offline store (training) → Redis (inference). Skew caught at serving time via SHA-256 feature matrix hashes and column-order validation.
 
-</details>
 
-<details>
-<summary><b>AI-Powered Data Quality & Incident Triage Platform</b> &nbsp;<code>Kafka · PostgreSQL · FastAPI · Prometheus</code></summary>
-<br>
+### AI-Powered Data Quality & Incident Triage Platform
+`Kafka · PostgreSQL · FastAPI · Prometheus`
+
 
 Real-time data quality platform detecting 6 failure modes (nulls · negatives · schema drift · malformed timestamps · duplicates · unsupported versions).
 
@@ -214,7 +206,6 @@ Real-time data quality platform detecting 6 failure modes (nulls · negatives ·
 | LLM triage | Root-cause JSON with severity scoring + remediation steps (mock / Ollama / OpenAI) |
 | API surface | 10 FastAPI endpoints · Prometheus scrape endpoint |
 
-</details>
 
 ---
 
