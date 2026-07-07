@@ -8,8 +8,6 @@
 
 <br/>
 
-<a href="https://linkedin.com/in/vishnup22"><img src="https://img.shields.io/badge/LinkedIn-vishnup22-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/></a>
-&nbsp;
 <a href="mailto:vishnupulipaka22@gmail.com"><img src="https://img.shields.io/badge/Email-vishnupulipaka22@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white"/></a>
 &nbsp;
 <a href="https://github.com/vishnup22"><img src="https://img.shields.io/badge/GitHub-vishnup22-181717?style=flat-square&logo=github&logoColor=white"/></a>
