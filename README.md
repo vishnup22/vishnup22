@@ -34,18 +34,14 @@ Currently seeking **AI/ML Engineer** or **Data Engineer** roles.
 
 ## Engineering Projects
 
-<div align="center">
-
-<a href="https://github.com/vishnup22/cdc-pipeline"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vishnup22&repo=cdc-pipeline&theme=default&hide_border=true&title_color=1e293b&text_color=374151" height="150"/></a>
-<a href="https://github.com/vishnup22/production-rag-eval-platform"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vishnup22&repo=production-rag-eval-platform&theme=default&hide_border=true&title_color=1e293b&text_color=374151" height="150"/></a>
-
-<a href="https://github.com/vishnup22/tensorrt-vision-server"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vishnup22&repo=tensorrt-vision-server&theme=default&hide_border=true&title_color=1e293b&text_color=374151" height="150"/></a>
-<a href="https://github.com/vishnup22/data-lakehouse"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vishnup22&repo=data-lakehouse&theme=default&hide_border=true&title_color=1e293b&text_color=374151" height="150"/></a>
-
-<a href="https://github.com/vishnup22/FinSight-AI"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vishnup22&repo=FinSight-AI&theme=default&hide_border=true&title_color=1e293b&text_color=374151" height="150"/></a>
-<a href="https://github.com/vishnup22/Vocalytics"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vishnup22&repo=Vocalytics&theme=default&hide_border=true&title_color=1e293b&text_color=374151" height="150"/></a>
-
-</div>
+| Project | Focus |
+|---|---|
+| [`cdc-pipeline`](https://github.com/vishnup22/cdc-pipeline) | Exactly-once CDC at 50K writes/min |
+| [`production-rag-eval-platform`](https://github.com/vishnup22/production-rag-eval-platform) | RAG eval with CI/CD quality gates |
+| [`tensorrt-vision-server`](https://github.com/vishnup22/tensorrt-vision-server) | 3.55× GPU inference speedup |
+| [`data-lakehouse`](https://github.com/vishnup22/data-lakehouse) | Delta Lake compaction engine |
+| [`FinSight-AI`](https://github.com/vishnup22/FinSight-AI) | Multi-agent stock analysis |
+| [`Vocalytics`](https://github.com/vishnup22/Vocalytics) | Voice-to-SQL analytics |
 
 ### [Distributed CDC Pipeline — Exactly-Once Delivery](https://github.com/vishnup22/cdc-pipeline)
 `PostgreSQL WAL → Debezium → Kafka → PyFlink → Apache Iceberg`
@@ -178,15 +174,12 @@ Real-time data quality platform detecting 6 failure modes (nulls, negatives, sch
 
 Independent research in low-resource language modeling and LLM fairness, alongside my engineering work.
 
-<div align="center">
-
-<a href="https://github.com/vishnup22/fairness-drift-llms"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vishnup22&repo=fairness-drift-llms&theme=default&hide_border=true&title_color=1e293b&text_color=374151" height="150"/></a>
-<a href="https://github.com/vishnup22/dravidian-lm-research"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vishnup22&repo=dravidian-lm-research&theme=default&hide_border=true&title_color=1e293b&text_color=374151" height="150"/></a>
-
-<a href="https://github.com/vishnup22/BabyLM"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vishnup22&repo=BabyLM&theme=default&hide_border=true&title_color=1e293b&text_color=374151" height="150"/></a>
-<a href="https://github.com/vishnup22/reward-model-benchmarks"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vishnup22&repo=reward-model-benchmarks&theme=default&hide_border=true&title_color=1e293b&text_color=374151" height="150"/></a>
-
-</div>
+| Project | Focus |
+|---|---|
+| [`fairness-drift-llms`](https://github.com/vishnup22/fairness-drift-llms) | Fairness drift across 12 LLM releases (EMNLP 2026 submission) |
+| [`dravidian-lm-research`](https://github.com/vishnup22/dravidian-lm-research) | Telugu/Kannada/Tamil/Malayalam LM pretraining |
+| [`BabyLM`](https://github.com/vishnup22/BabyLM) | BabyLM 2026 Challenge baselines |
+| [`reward-model-benchmarks`](https://github.com/vishnup22/reward-model-benchmarks) | C++ vs Python RLHF reward-model inference |
 
 ### [Release-Level Fairness Drift in Large Language Models](https://github.com/vishnup22/fairness-drift-llms)
 `EMNLP 2026 submission`
@@ -312,9 +305,11 @@ Systems benchmark asking a narrow empirical question: how much does a native C++
 ## GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vishnup22&show_icons=true&theme=default&hide_border=true&include_all_commits=true&count_private=true&title_color=1e293b&icon_color=2563EB&text_color=374151" height="165"/>
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vishnup22&layout=compact&theme=default&hide_border=true&langs_count=7&title_color=1e293b&text_color=374151" height="165"/>
+  <img src="https://github.com/vishnup22.png" width="80" style="border-radius:50%"/>
+
+  <a href="https://github.com/vishnup22?tab=repositories">Repositories</a> ·
+  <a href="https://github.com/vishnup22?tab=stars">Stars</a> ·
+  <a href="https://github.com/vishnup22?tab=followers">Followers</a>
 </div>
 
 <div align="center">
