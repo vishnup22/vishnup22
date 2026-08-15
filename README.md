@@ -42,6 +42,9 @@ Currently seeking **AI/ML Engineer** or **Data Engineer** roles.
 | [`data-lakehouse`](https://github.com/vishnup22/data-lakehouse) | Delta Lake compaction engine |
 | [`FinSight-AI`](https://github.com/vishnup22/FinSight-AI) | Multi-agent stock analysis |
 | [`Vocalytics`](https://github.com/vishnup22/Vocalytics) | Voice-to-SQL analytics |
+| [`flowforge-automation-engine`](https://github.com/vishnup22/flowforge-automation-engine) | Visual workflow automation, Spring Boot DAG executor |
+| [`flash-sale-reservation-platform`](https://github.com/vishnup22/flash-sale-reservation-platform) | Redlock + Kafka flash-sale reservations |
+| [`quire-workspace`](https://github.com/vishnup22/quire-workspace) | Real-time CRDT collaborative editor |
 
 ### [Distributed CDC Pipeline — Exactly-Once Delivery](https://github.com/vishnup22/cdc-pipeline)
 `PostgreSQL WAL → Debezium → Kafka → PyFlink → Apache Iceberg`
@@ -148,6 +151,61 @@ Voice-to-SQL BI copilot processing Instacart-scale data (~3.4M orders, **30M+ li
 
 </details>
 
+### [FlowForge — Visual Workflow Automation Engine](https://github.com/vishnup22/flowforge-automation-engine)
+`React Flow · Spring Boot · PostgreSQL · JWT · Jasypt AES-256`
+
+Drag-and-drop workflow editor backed by a Spring Boot DAG executor, with JWT auth and OAuth credentials encrypted at rest.
+
+<details>
+<summary>Details & architecture</summary>
+<br>
+
+| | |
+|---|---|
+| Editor | React Flow visual DAG builder |
+| Execution logs | Real-time SSE, buffering disabled for immediate delivery |
+| Credential security | OAuth tokens encrypted via Jasypt AES-256 before persistence |
+| Auth | JWT-signed, no development-secret fallbacks |
+| Verification | End-to-end script checks health, auth, workflow run, SSE logs, and persisted records |
+
+</details>
+
+### [Flash Sale Reservation Platform](https://github.com/vishnup22/flash-sale-reservation-platform)
+`Spring Boot · Redis/Redlock · Kafka · PostgreSQL · WebSocket`
+
+High-throughput inventory reservation system for flash-sale traffic spikes.
+
+<details>
+<summary>Details & architecture</summary>
+<br>
+
+| | |
+|---|---|
+| Reservation | Redisson Redlock on `inventory:{itemId}`, 5-minute lease + hold TTL |
+| Checkout | Hold verified → Kafka event → consumer → ACID write to `orders`/`transactions` → stock decremented |
+| Real-time | WebSocket (STOMP) broadcast to `/topic/inventory`, auto-reconnect with backoff |
+| Fallback | 5-second polling of `GET /api/inventory` while disconnected |
+| Expiry | Redis keyspace notifications return unclaimed holds to the pool |
+
+</details>
+
+### [Quire — Collaborative Workspace](https://github.com/vishnup22/quire-workspace)
+`React · Tiptap · Yjs · Spring Boot · PostgreSQL · Redis`
+
+Real-time collaborative document editor with live multi-cursor editing.
+
+<details>
+<summary>Details & architecture</summary>
+<br>
+
+| | |
+|---|---|
+| Client sync | Tiptap editor over Yjs CRDTs — conflict-free concurrent editing |
+| Server | Spring Boot WebSocket hub (`/ws/docs`) |
+| Persistence | PostgreSQL for documents, Redis for session/presence state |
+
+</details>
+
 <details>
 <summary><strong>More engineering projects</strong> — Telco Churn MLOps · Feature Store Skew Detection · Data Quality & Incident Triage</summary>
 
@@ -180,6 +238,7 @@ Independent research in low-resource language modeling and LLM fairness, alongsi
 | [`dravidian-lm-research`](https://github.com/vishnup22/dravidian-lm-research) | Telugu/Kannada/Tamil/Malayalam LM pretraining |
 | [`BabyLM`](https://github.com/vishnup22/BabyLM) | BabyLM 2026 Challenge baselines |
 | [`reward-model-benchmarks`](https://github.com/vishnup22/reward-model-benchmarks) | C++ vs Python RLHF reward-model inference |
+| [`tok-adapt`](https://github.com/vishnup22/tok-adapt) | Tokenizer/embedding adaptation for cross-lingual fine-tuning |
 
 ### [Release-Level Fairness Drift in Large Language Models](https://github.com/vishnup22/fairness-drift-llms)
 `EMNLP 2026 submission`
@@ -247,6 +306,21 @@ Systems benchmark asking a narrow empirical question: how much does a native C++
 
 </details>
 
+### [tok-adapt — Tokenizer & Embedding Adaptation for Cross-Lingual Fine-Tuning](https://github.com/vishnup22/tok-adapt)
+`Python · CLI · Hugging Face Transformers`
+
+Production-ready library and pipeline for adapting Hugging Face tokenizers and LLM embedding layers to new languages and domains.
+
+<details>
+<summary>Details & scope</summary>
+<br>
+
+- Library for adapting, extending, pruning, and initializing tokenizers and embedding layers for cross-lingual fine-tuning and domain adaptation
+- End-to-end pipeline: data prep → vocabulary adaptation → checkpoint alignment → CPT/SFT/DPO training → evaluation → quantized export
+- Ships as an installable CLI on top of the core library
+
+</details>
+
 ---
 
 ## Tech Stack
@@ -287,6 +361,16 @@ Systems benchmark asking a narrow empirical question: how much does a native C++
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logoColor=black)
 ![MinIO / S3](https://img.shields.io/badge/MinIO%20%2F%20S3-C72E49?style=flat-square&logo=amazons3&logoColor=white)
+
+**Full-Stack & Backend**
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket%20%2F%20STOMP-black?style=flat-square)
+![Yjs](https://img.shields.io/badge/Yjs-CRDT-000000?style=flat-square)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
 
 **MLOps & Infrastructure**
 
@@ -333,5 +417,5 @@ I'm actively looking for **AI/ML Engineer** or **Data Engineer** roles, and alwa
 ---
 
 <div align="center">
-<sub>Last updated · July 2026</sub>
+<sub>Last updated · August 2026</sub>
 </div>
