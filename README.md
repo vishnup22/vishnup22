@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:020617,45:0f172a,100:111827&text=Vishnu%20Pulipaka&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=AI%20Engineer%20%E2%80%A2%20Researcher&descAlignY=58&descSize=20&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:020617,45:0f172a,100:111827&text=Vishnu%20&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=AI%20Engineer%20%E2%80%A2%20Researcher&descAlignY=58&descSize=20&animation=fadeIn" width="100%" />
 
 <br>
 
