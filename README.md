@@ -1,4 +1,4 @@
-# Vishnu Pulipaka
+# Vishnu 
 
 ### AI Engineer · LLM Systems · AI Research
 
